@@ -19,6 +19,31 @@ body {
 	color: #fff;
 }
 
+.red-bg {
+	background: #ed1d25;
+	color: #fff;
+}
+
+.orange-bg {
+	background: #f1592b;
+	color: #fff;
+}
+
+.green-bg {
+	background: #0b9445;
+	color: #fff;
+}
+
+.lime-bg {
+	background: #8dc63f;
+	color: #fff;
+}
+
+.sky-bg {
+	background: #00aeef;
+	color: #fff;
+}
+
 #mainhead {
 	position: absolute;
 	top: 0;
@@ -76,10 +101,21 @@ body {
 
 #intro-slider {
 	height: 90vh;
-	background: url(lady.jpg) center center no-repeat;
-	background-size: cover;
 	margin: 0;
 	position: relative;
+}
+
+#intro-slider .slide {
+	position: relative;
+	height: 90vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+#intro-slider .slide img {
+	display: block;
+	width: 100%;
+	margin-top: -5em;
 }
 
 #intro-slider blockquote {
@@ -144,9 +180,18 @@ body {
 }
 
 #icons .column img {
-	width: 100%;
-	margin: 0;
+	width: 50%;
+	margin: 3em 25%;
 	display: inline-block;
+}
+
+#icons .column h4 {
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: normal;
+	margin: 0 0 3rem 0;
+	font-size: 2em;
+	font-family: 'Biko-Bold', sans-serif;
 }
 
 #mainfoot {

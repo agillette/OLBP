@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Open Lab Blueprint</title>
 	<link rel="stylesheet" href="normalize.css" />
+	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.3.11/slick.css"/>
 	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -21,8 +22,15 @@
 			</ul>
 		</nav>
 	</header>
-	<section id="intro-slider">
-		<blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. <cite>- Heather Dewey-Hagborg</cite></blockquote>
+	<section id="intro-slider" class="fade">
+		<div class="slide">
+			<img src="lady.jpg" alt="" />
+			<blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. <cite>- Heather Dewey-Hagborg</cite></blockquote>
+		</div>
+		<div class="slide">
+			<img src="lady2.jpg" alt="" />
+			<blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. <cite>- Not Heather Dewey-Hagborg</cite></blockquote>
+		</div>
 	</section>
 	<section id="what">
 		<h2>What is an Open Lab and Why Start One?</h2>
@@ -31,16 +39,49 @@
 	</section>
 	<section id="icons">
 		<div class="row clearfix">
-			<div class="column"><img src="community.png" alt="" /></div>
-			<div class="column"><img src="space.png" alt="" /></div>
-			<div class="column"><img src="equipment.png" alt="" /></div>
+			<div class="column red-bg" id="community">
+				<img src="people_nobg.png" alt="" />
+				<h4>Community</h4>
+			</div>
+			<div class="column blue-bg" id="space">
+				<img src="space_nobg.png" alt="" />
+				<h4>Space</h4>
+			</div>
+			<div class="column orange-bg">
+				<img src="equipment_nobg.png" alt="" />
+				<h4>Equipment</h4>
+			</div>
 		</div>
 		<div class="row clearfix">
-			<div class="column"><img src="nutsbolts.png" alt="" /></div>
-			<div class="column"><img src="fundraising.png" alt="" /></div>
-			<div class="column"><img src="biosafety.png" alt="" /></div>
+			<div class="column green-bg">
+				<img src="nutsbolts_nobg.png" alt="" />
+				<h4>Nuts & Bolts</h4>
+			</div>
+			<div class="column sky-bg">
+				<img src="fundraising_nobg.png" alt="" />
+				<h4>Fundraising</h4>
+			</div>
+			<div class="column lime-bg">
+				<img src="biosafety_nobg.png" alt="" />
+				<h4>Biosafety</h4>
+			</div>
 		</div>
 	</section>
 	<footer id="mainfoot"></footer>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.3.11/slick.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.fade').slick({
+				dots: false,
+				arrows: false,
+				autoplay: true,
+				infinite: true,
+				speed: 500,
+				fade: true,
+				cssEase: 'linear'
+			});
+		});
+	</script>
 </body>
 </html>
