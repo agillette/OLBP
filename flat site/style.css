@@ -66,11 +66,39 @@ body {
 	margin: 1.5em 3em;
 	display: block;
 	float: left;
-	width: 16.875em;
-	height: 7.6875em;
-	background: url(../olbp/img/logo.png) center center no-repeat;
-	background-size: cover;
+	width: 209px;
+	height: 100px;
+	overflow: hidden;
+	background: url(img/olbp_sprite.png) no-repeat;
 	text-indent: -9999px;
+}
+
+#logo.white-logo {
+	background-position: 0px 0px;
+}
+
+#logo.green-logo {
+	background-position: 0px -100px;
+}
+
+#logo.blue-logo {
+	background-position: 0px -200px;
+}
+
+#logo.orange-logo {
+	background-position: 0px -300px;
+}
+
+#logo.sky-logo {
+	background-position: 0px -400px;
+}
+
+#logo.lime-logo {
+	background-position: 0px -500px;
+}
+
+#logo.red-logo {
+	background-position: 0px -600px;
 }
 
 #mainnav {
